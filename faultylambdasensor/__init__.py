@@ -4,17 +4,13 @@ from scipy.interpolate import interp2d
 
 
 def airfuleratio(given_load, given_rpm):
-    fu_car = interp2d(fule_load, fule_rpm, afr, kind='linear', fill_value='-1')
-    y = float(round(fu_car(given_load, given_rpm)[0], 4))
-    x = 14.7
-    airistofuleratio = y/x
+    a_f_r = interp2d(fule_load, fule_rpm, afr, kind='linear', fill_value='-1')
+    airistofuleratio = float(round(a_f_r(given_load, given_rpm)[0], 4))/14.7
     return airistofuleratio
 
 
 def sparkangle(given_load, given_rpm):
-    fu_car = interp2d(igni_load, igni_rpm, spark_angle,
-                      kind='linear', fill_value='-1')
-    y = float(round(fu_car(given_load, given_rpm)[0], 4))
-    x = 14.7
-    sparkangle = y/x
+    spang = interp2d(igni_load, igni_rpm, spark_angle,
+                     kind='linear', fill_value='-1')
+    sparkangle = float(round(spang(given_load, given_rpm)[0], 4))
     return sparkangle
