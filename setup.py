@@ -7,9 +7,9 @@ here = os.path.abspath(os.path.dirname(__file__))
 with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
     long_description = "\n" + fh.read()
 
-VERSION = '0.0.2'
-DESCRIPTION = 'Get Air:Fule Ratio or Spark Angle for Any Engine'
-LONG_DESCRIPTION = 'Python Package for determining the Air: Fule Ratio from the Fule Maps and Spark Angle from the Ignition Map for the Faulty Lambda Sensor'
+VERSION = '0.0.3'
+DESCRIPTION = 'Get Air:Fuel Ratio or Spark Angle for Any Engine'
+LONG_DESCRIPTION = 'Python Package for determining the Air: Fuel Ratio from the Fuel Maps and Spark Angle from the Ignition Map for the Faulty Lambda Sensor'
 
 # Setting up
 setup(
