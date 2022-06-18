@@ -48,10 +48,13 @@ print(s_a)
 ## Contributing to faultylambdasensor
 
 ### Todos
--[x] Code Completion
--[ ] Add Standard Documentation (Mk Docs)
--[ ] Add Fuel Maps and Ignition Maps of All avaliable Engines
--[ ] Replace the interp2d scipy function with custom one to replace the overall package size
+- [x] Code Completion
+
+- [ ] Add Standard Documentation (Mk Docs)
+
+- [ ] Add Fuel Maps and Ignition Maps of All avaliable Engines
+
+- [ ] Replace the interp2d scipy function with custom one to replace the overall package size
 
 ## Code of Conduct
 
