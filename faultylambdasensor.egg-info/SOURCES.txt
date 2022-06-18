@@ -2,8 +2,12 @@ CHANGELOG.txt
 LICENSE
 MANIFEST.in
 README.md
+examples.py
 setup.py
 faultylambdasensor/__init__.py
+faultylambdasensor/fls.py
+faultylambdasensor/fuelmap.py
+faultylambdasensor/ignitionmap.py
 faultylambdasensor.egg-info/PKG-INFO
 faultylambdasensor.egg-info/SOURCES.txt
 faultylambdasensor.egg-info/dependency_links.txt

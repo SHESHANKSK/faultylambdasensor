@@ -4,10 +4,6 @@ from scipy.interpolate import interp2d
 
 
 class FLS:
-    def __init__(self, load, rpm) -> None:
-        self.load = load
-        self.rpm = rpm
-
     def lambdavalue(load=None, rpm=None):
         a_f_r = interp2d(Fuelmap.load, Fuelmap.rpm, Fuelmap.afr,
                          kind='linear', fill_value='-1')
